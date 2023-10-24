@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/filters.css">
+<link rel="stylesheet" href="css/font.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>  
+<script src="js/modals.js"></script>
+<?php
+// Database Settings
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$database = "portaleripetizioni";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+
+// Session Messages
+session_start();
+
+if(isset($_SESSION['booked'])&& $_SESSION['booked']){
+  echo ' <p class="my-0 py-3 mx-0 px-2 alert alert-success text-success">Prenotazione effettuata con successo. Verrai ricontattato il prima possibile</p>';
+  unset($_SESSION['booked']);
+}
+
+if(isset($_SESSION['nbooked'])&& $_SESSION['nbooked']){
+  echo ' <p class="my-0 py-0 mx-0 px-0 alert alert-danger">Errore durante la prenotazione</p>';
+  unset($_SESSION['nbooked']);
+}
+
+?>
