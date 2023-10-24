@@ -15,7 +15,7 @@
         <div class="card w-100 alert alert-success py-0">
             <div class="card-body w-100 mx-0 py-0 mb-3">
                 <div class="row text-start justify-content-center w-100 mx-0">
-                    <p class="alert text-dark w-100" style="font-size: 1.5rem; font-weight: bolder"> Area Privata </p>
+                    <p class="alert text-dark w-100" style="font-size: 1.5rem; font-weight: bolder"> Chi Sono </p>
                 </div>
                 <div class="row text-center justify-content-center w-100 mx-0">
                     <div class="col-2">
@@ -201,21 +201,21 @@
 
 
         <!-- Third section: Price and Packets -->
-        <div class="card w-100 alert alert-warning py-0">
+        <div class="card w-100 alert alert-primary py-0">
             <div class="card-content mb-1 text-white mb-2">
                 <div class="row text-start justify-content-cetner w-100 mx-auto">
                     <p class="alert text-dark w-100" style="font-size: 1.5rem; font-weight: bolder"> Prezzi </p>
                 </div>
                 <div class="row w-100 justify-content-center mx-auto">
                     <div class="col-4 mx-auto">
-                        <div class="card bg bg-warning" style="height: 100%">
+                        <div class="card bg bg-primary" style="height: 100%">
                             <div class="card-body" style="height: 100%">
                                 <div class="row w-100 justify-content-center text-start">
                                     <div class="col-12 mb-0">
-                                        <span class="card-title"> Incontro Singolo </span>
+                                        <span class="card-title"> 1 Ora / Settimana </span>
                                     </div>
                                     <div class="col-12 mb-3 mt-0">
-                                        <span class="card-title" style="font-size: 1.5rem"> 11,99€/h </span>
+                                        <span class="card-title" style="font-size: 1.5rem"> 14,99€/h </span>
                                     </div>
                                     <div class="col-12 text-start justify-content-start">
                                         <il style="list-style: none">
@@ -229,40 +229,40 @@
                         </div>
                     </div>
                     <div class="col-4 mx-auto">
-                        <div class="card bg bg-warning" style="height: 100%">
+                        <div class="card bg bg-primary" style="height: 100%">
                             <div class="card-body" style="heigth: 100%">
                                 <div class="row w-100 justify-content-center text-start">
                                     <div class="col-12 mb-0">
-                                        <span class="card-title"> 2 Incontri </span>
+                                        <span class="card-title"> 2 Ore / Settimana </span>
+                                    </div>
+                                    <div class="col-12 mb-3 mt-0">
+                                        <span class="card-title" style="font-size: 1.5rem"> 12,99€/h </span>
+                                    </div>
+                                    <div class="col-12 text-start justify-content-start">
+                                        <il style="list-style: none">
+                                            <li> 2 ore da prenotare nella stessa settimana </li>
+                                            <li> Lezione a Domicilio, in Casa o Online </li>
+                                            <li> Accesso alla raccolta di Video Spiegazione </li>
+                                            <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
+                                        </il>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mx-auto">
+                        <div class="card bg bg-primary" style="height: 100%">
+                            <div class="card-body" style="heigth: 100%">
+                                <div class="row w-100 justify-content-center text-start">
+                                    <div class="col-12 mb-0">
+                                        <span class="card-title"> 4 Ore / Settimana </span>
                                     </div>
                                     <div class="col-12 mb-3 mt-0">
                                         <span class="card-title" style="font-size: 1.5rem"> 9,99€/h </span>
                                     </div>
                                     <div class="col-12 text-start justify-content-start">
                                         <il style="list-style: none">
-                                            <li> 2 Incontri da prenotare nella stessa settimana </li>
-                                            <li> Lezione a Domicilio, in Casa o Online </li>
-                                            <li> Accesso alla raccolta di Video Spiegazione </li>
-                                            <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
-                                        </il>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 mx-auto">
-                        <div class="card bg bg-warning" style="height: 100%">
-                            <div class="card-body" style="heigth: 100%">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-0">
-                                        <span class="card-title"> 4 Incontri </span>
-                                    </div>
-                                    <div class="col-12 mb-3 mt-0">
-                                        <span class="card-title" style="font-size: 1.5rem"> 7,99€/h </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> 4 Incontri da prenotare nella settimana </li>
+                                            <li> 4 ore da prenotare nella settimana </li>
                                             <li> Lezione a Domicilio, in Casa o Online </li>
                                             <li> Accesso alla raccolta di Video Spiegazione </li>
                                             <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
