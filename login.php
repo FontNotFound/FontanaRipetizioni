@@ -22,19 +22,19 @@
                     <p class="mb-4">Accesso riservato ai ragazz* che hanno prenotato una lezione. per accedere utilizzare l'account fornito durante la lezione</p>
                     </div>
                     <form action="loginChecker.php" method="post">
-                    <div class="form-group first">
+                    <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" class="form-control" id="username" name="user">
 
                     </div>
-                    <div class="form-group last mb-4">
+                    <div class="form-group mb-4 mt-2">
                         <label for="password">Password</label>
                         <input type="password" class="form-control" id="password" name="password">
                         
                     </div>
                     
                     <div class="d-flex mb-5 align-items-center">
-                        <span class="ml-auto"><a href="#" class="forgot-pass">Password Dimenticata</a></span> 
+                        <span class="ml-auto"><a href="#" class="forgot-pass">Password dimenticata?</a></span> 
                     </div>
 
                     <input type="submit" value="Accedi" class="btn btn-block btn-primary">

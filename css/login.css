@@ -41,7 +41,6 @@ body {
       background: #edf2f5;
       border-bottom: 1px solid #e6edf1; }
       .content .contents .form-group label, .content .bg .form-group label {
-        position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);

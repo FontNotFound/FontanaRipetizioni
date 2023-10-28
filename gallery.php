@@ -18,6 +18,10 @@
 
         <!-- include navbar -->
         <?php include('components/navbar.php'); ?>
+
+        
+        <!-- include Login Controller -->
+        <?php include('components/loginController.php'); ?>
         
         <!-- Video Select -->
         <div class="row w-100 justify-content-center text-center mx-0 px-0 mt-3">
@@ -86,28 +90,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Not Logged Modal -->
-        <div class="modal modal-xl" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Non risulti registrato</h5>
-                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h2 class="text-primary">Questi sono contenuti riservati</h2>
-                    <p> Per accedere alle video lezioni, alle esercitazioni e ai file di esercitazione prenota una lezione e ottieni un account per accedere a tutti i contenuti esclusivi! </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Prenota una Lezione</button>
-                    <button type="button" class="btn btn-primary">Accedi all'Area Riservata</button>
-                </div>
-                </div>
-            </div>
-        </div>
-                
+        </div> 
     </body>
     <script type="text/JavaScript">
         //Navbar Color set
@@ -116,10 +99,5 @@
             $(this).addClass("btn-info")
         })
 
-        //Login control
-        if(!logged){
-            $('#loginModal').modal('show')
-            $('#loginModal').fadeIn("slow")
-        }
     </script> 
 </html>
