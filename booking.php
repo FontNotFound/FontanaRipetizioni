@@ -355,7 +355,7 @@
                         response = xhr.send(JSON.stringify({
                             selected: selected
                         }))
-                        location.reload()
+                        xhr.onreadystatechange(location.reload())
                     }
                     break;
             }

@@ -102,101 +102,112 @@
                 </div>
             </div>
         </div>
-
         <!-- Second section: Perks -->
         <div class="card w-100 alert alert-info py-0">
             <div class="card-content mb-1 text-white mb-2">
                 <div class="row text-start justify-content-cetner w-100 mx-auto">
-                    <p class="alert text-dark w-100" style="font-size: 1.5rem; font-weight: bolder"> Strumenti Didattici </p>
+                    <p class="alert text-info w-100" style="font-size: 1.5rem; font-weight: bolder"> Strumenti Didattici </p>
                 </div>
                 <div class="row w-100 justify-content-center mx-auto">
-                    <div class="col-3 mx-auto">
-                        <div class="card bg bg-info">
-                            <div class="card-body">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-3">
-                                        <img src="img/svg/voice.svg" style="width: 100%" class="img-fluid filter-white"/>
+                    <div class="col-4 d-flex align-items-center">
+                        <img class="img-fluid" src="img/svg/lavagna.svg">
+                    </div> 
+                    <div class="col-8">
+                        <div class="row w-100 mx-0 px-0 mt-2">
+                            <div class="col-6 mx-auto">
+                                <div class="card bg bg-info">
+                                    <div class="card-body">
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-3">
+                                                <img src="img/svg/voice.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-12 mb-2">
+                                                <span class="card-title"> Lezione Frontale </span>
+                                            </div>
+                                            <div class="col-12 text-start justify-content-start">
+                                                <il style="list-style: none">
+                                                    <li> Lezione Online </li>
+                                                    <li> Lezione a Domicilio presso Pisa </li>
+                                                    <li> Lezione in Casa (zona Piazza Vittorio Emanuele II) </li>
+                                                </il>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-2">
-                                        <span class="card-title"> Lezione Frontale </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> Lezione a Domicilio presso Pisa </li>
-                                            <li> Lezione in Casa (zona Piazza Vittorio Emanuele II) </li>
-                                        </il>
+                            </div>
+                            <div class="col-6 mx-auto">
+                                <div class="card bg bg-info">
+                                    <div class="card-body">
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-3">
+                                                <img src="img/svg/video.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-12 mb-2">
+                                                <span class="card-title"> Raccolta Spiegazioni </span>
+                                            </div>
+                                            <div class="col-12 text-start justify-content-start">
+                                                <il style="list-style: none">
+                                                    <li> Raccolta video esempio, spiegazioni ed esercizi ad hoc per i principali concetti dell'Informatica </li>
+                                                </il>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3 mx-auto">
-                        <div class="card bg bg-info">
-                            <div class="card-body">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-3">
-                                        <img src="img/svg/video.svg" style="width: 100%" class="img-fluid filter-white"/>
+                        <div class="row w-100 mx-0 px-0 my-2">
+                            <div class="col-6 mx-auto">
+                                <div class="card bg bg-info">
+                                    <div class="card-body">
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-3">
+                                                <img src="img/svg/folders.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-12 mb-2">
+                                                <span class="card-title"> Esercizi e Moduli </span>
+                                            </div>
+                                            <div class="col-12 text-start justify-content-start">
+                                                <il style="list-style: none">
+                                                    <li> Moduli ed esercizi online sul Portale con riscontro diretto e correzione degli errori </li>
+                                                </il>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-2">
-                                        <span class="card-title"> Raccolta Spiegazioni </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> Raccolta video esempio, spiegazioni ed esercizi ad hoc per i principali concetti dell'Informatica </li>
-                                        </il>
+                            </div>
+                            <div class="col-6 mx-auto">
+                                <div class="card bg bg-info">
+                                    <div class="card-body">
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-3">
+                                                <img src="img/svg/chat.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100 justify-content-center text-start">
+                                            <div class="col-12 mb-2">
+                                                <span class="card-title"> Domande e Assistenza </span>
+                                            </div>
+                                            <div class="col-12 text-start justify-content-start">
+                                                <il style="list-style: none">
+                                                    <li> Correzione e commento dei moduli online e chat per assistenza specifica su argomenti o esercizi </li>
+                                                </il>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3 mx-auto">
-                        <div class="card bg bg-info">
-                            <div class="card-body">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-3">
-                                        <img src="img/svg/folders.svg" style="width: 100%" class="img-fluid filter-white"/>
-                                    </div>
-                                </div>
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-2">
-                                        <span class="card-title"> Esercizi e Moduli </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> Moduli ed esercizi online sul Portale con riscontro diretto e correzione degli errori </li>
-                                        </il>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 mx-auto">
-                        <div class="card bg bg-info">
-                            <div class="card-body">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-3">
-                                        <img src="img/svg/chat.svg" style="width: 100%" class="img-fluid filter-white"/>
-                                    </div>
-                                </div>
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-2">
-                                        <span class="card-title"> Domande e Assistenza </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> Correzione e commento dei moduli online e chat per assistenza specifica su argomenti o esercizi </li>
-                                        </il>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
 
 
@@ -204,72 +215,81 @@
         <div class="card w-100 alert alert-primary py-0">
             <div class="card-content mb-1 text-white mb-2">
                 <div class="row text-start justify-content-cetner w-100 mx-auto">
-                    <p class="alert text-dark w-100" style="font-size: 1.5rem; font-weight: bolder"> Prezzi </p>
+                    <p class="alert text-primary w-100" style="font-size: 1.5rem; font-weight: bolder"> Prezzi </p>
                 </div>
                 <div class="row w-100 justify-content-center mx-auto">
-                    <div class="col-4 mx-auto">
-                        <div class="card bg bg-primary" style="height: 100%">
-                            <div class="card-body" style="height: 100%">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-0">
-                                        <span class="card-title"> 1 Ora / Settimana </span>
-                                    </div>
-                                    <div class="col-12 mb-3 mt-0">
-                                        <span class="card-title" style="font-size: 1.5rem"> 14,99€/h </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> Lezione a Domicilio, in Casa o Online </li>
-                                            <li> Accesso alla raccolta di Video Spiegazione </li>
-                                            <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
-                                        </il>
+                    <div class="row w-100 mx-auto px-auto justify-content-between">
+                        <div class="col-9">
+                            <div class="row w-100 mx-auto px-auto">
+                                <div class="col-4 mx-auto">
+                                    <div class="card bg bg-primary" style="height: 100%">
+                                        <div class="card-body" style="height: 100%">
+                                            <div class="row w-100 justify-content-center text-start">
+                                                <div class="col-12 mb-0">
+                                                    <span class="card-title"> 1 Ora / Settimana </span>
+                                                </div>
+                                                <div class="col-12 mb-3 mt-0">
+                                                    <span class="card-title" style="font-size: 1.5rem"> 14,99€/h </span>
+                                                </div>
+                                                <div class="col-12 text-start justify-content-start">
+                                                    <il style="list-style: none">
+                                                        <li> Lezione a Domicilio, in Casa o Online </li>
+                                                        <li> Accesso alla raccolta di Video Spiegazione </li>
+                                                        <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
+                                                    </il>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-4 mx-auto">
+                                    <div class="card bg bg-primary" style="height: 100%">
+                                        <div class="card-body" style="heigth: 100%">
+                                            <div class="row w-100 justify-content-center text-start">
+                                                <div class="col-12 mb-0">
+                                                    <span class="card-title"> 2 Ore / Settimana </span>
+                                                </div>
+                                                <div class="col-12 mb-3 mt-0">
+                                                    <span class="card-title" style="font-size: 1.5rem"> 12,99€/h </span>
+                                                </div>
+                                                <div class="col-12 text-start justify-content-start">
+                                                    <il style="list-style: none">
+                                                        <li> 2 ore da prenotare nella stessa settimana </li>
+                                                        <li> Lezione a Domicilio, in Casa o Online </li>
+                                                        <li> Accesso alla raccolta di Video Spiegazione </li>
+                                                        <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
+                                                    </il>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 mx-auto">
+                                    <div class="card bg bg-primary" style="height: 100%">
+                                        <div class="card-body" style="heigth: 100%">
+                                            <div class="row w-100 justify-content-center text-start">
+                                                <div class="col-12 mb-0">
+                                                    <span class="card-title"> 4 Ore / Settimana </span>
+                                                </div>
+                                                <div class="col-12 mb-3 mt-0">
+                                                    <span class="card-title" style="font-size: 1.5rem"> 9,99€/h </span>
+                                                </div>
+                                                <div class="col-12 text-start justify-content-start">
+                                                    <il style="list-style: none">
+                                                        <li> 4 ore da prenotare nella settimana </li>
+                                                        <li> Lezione a Domicilio, in Casa o Online </li>
+                                                        <li> Accesso alla raccolta di Video Spiegazione </li>
+                                                        <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
+                                                    </il>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
-                    </div>
-                    <div class="col-4 mx-auto">
-                        <div class="card bg bg-primary" style="height: 100%">
-                            <div class="card-body" style="heigth: 100%">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-0">
-                                        <span class="card-title"> 2 Ore / Settimana </span>
-                                    </div>
-                                    <div class="col-12 mb-3 mt-0">
-                                        <span class="card-title" style="font-size: 1.5rem"> 12,99€/h </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> 2 ore da prenotare nella stessa settimana </li>
-                                            <li> Lezione a Domicilio, in Casa o Online </li>
-                                            <li> Accesso alla raccolta di Video Spiegazione </li>
-                                            <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
-                                        </il>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 mx-auto">
-                        <div class="card bg bg-primary" style="height: 100%">
-                            <div class="card-body" style="heigth: 100%">
-                                <div class="row w-100 justify-content-center text-start">
-                                    <div class="col-12 mb-0">
-                                        <span class="card-title"> 4 Ore / Settimana </span>
-                                    </div>
-                                    <div class="col-12 mb-3 mt-0">
-                                        <span class="card-title" style="font-size: 1.5rem"> 9,99€/h </span>
-                                    </div>
-                                    <div class="col-12 text-start justify-content-start">
-                                        <il style="list-style: none">
-                                            <li> 4 ore da prenotare nella settimana </li>
-                                            <li> Lezione a Domicilio, in Casa o Online </li>
-                                            <li> Accesso alla raccolta di Video Spiegazione </li>
-                                            <li> Accesso ai moduli e gli esercizi sugli argomenti trattati </li>
-                                        </il>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="img/svg/payment.svg" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -277,13 +297,13 @@
         </div>
 
         <!-- Fourth section: Booking -->
-        <div class="card card-content alert alert-primary justify-content-center text-start">
+        <div class="card card-content alert alert-success justify-content-center text-start">
             <div class="row text-start justify-content-cetner w-100 mx-auto">
-                <p class="alert text-dark w-100" style="font-size: 1.5rem; font-weight: bolder"> Disponibilità e Prenotazioni </p>
+                <p class="alert text-success w-100" style="font-size: 1.5rem; font-weight: bolder"> Disponibilità e Prenotazioni </p>
             </div>
             <div class="row w-100 justify-content-center mx-auto mb-2">
                 <table class="col-11 table-hover table-bordered w-100 mx-2 px-auto text-center">
-                    <thead class="bg bg-light">
+                    <thead class="bg bg-success text-white">
                         <tr>
                             <th scope="col"> Orario </th> 
                             <th scope="col"> Lunedì </th>
@@ -329,8 +349,11 @@
                     ?>
                     </tbody>
                 </table>
-
-                
+            </div>
+            <div class="row w-100 justify-content-end text-center">
+                <div class="col-4">
+                    <a href="booking.php" class="btn btn-success"> Prenota subito una lezione </a>
+                </div>
             </div>
         </div>
         
