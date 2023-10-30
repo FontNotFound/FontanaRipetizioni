@@ -31,14 +31,14 @@
                     </thead>
                     <tbody>
                         <?php 
-                            if($logged && $result = $conn->query("SELECT * FROM documento_utenti WHERE utente = '".$_SESSION['user']."'" )){
+                            if($logged && $result = $conn->query("SELECT * FROM documento_utenti LEFT JOIN documento ON documento_utenti.documento = documento.nome WHERE utente_nome = '".$_SESSION['user']."' AND utente_email = '".$_SESSION['email']."'" )){
                                 foreach($result as $document){
                                     echo("
                                         <tr>
                                             <td> ".$document['nome']." </td>
                                             <td> ".$document['materia']." </td>
                                             <td> ".$document['argomento']." </td>
-                                            <td> ".$document['numLezioni']." </td>
+                                            <td> ".$document['data']." </td>
                                             <td> <a download class='btn btn-info btn-sm' href='".$document['path']."'> Scarica </a> </td>
                                         </tr>
                                     ");

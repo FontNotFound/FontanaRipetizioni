@@ -11,6 +11,7 @@ if($result = $conn->query("SELECT * FROM users WHERE nome = '".$username."'"))
     foreach($result as $user){
         if(password_verify($password, $user['password'])){
             $_SESSION['user'] = $user['nome'];
+            $_SESSION['email'] = $user['email'];
             $_SESSION['response'] = 'Success';
             $_SESSION['response_message'] = "Accesso effettuato come ".$username;
             $found = true;

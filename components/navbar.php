@@ -1,8 +1,8 @@
 <div id="navbarRow" class="row text-start justify-content-start w-100 bg my-0 py-0 mx-0 px-0 sticky-top">
-    <div class="col-6">
+    <div class="col-4">
         <h1 class="text-white">Portale Ripetizioni</h1>
     </div>
-    <div class="col-6 d-flex align-items-center">
+    <div class="col-8 d-flex align-items-center">
         <div class="row w-100 mx-0 px-0">
             <div class="auto">
                 <a class="navbarbtn btn" href="index.php">Home</a>
@@ -24,8 +24,11 @@
             </div>
             <div class="auto">
                 <?php 
-                    if(isset($_SESSION['user']))
+                    if(isset($_SESSION['user'])){
                         echo('<a class="navbarbtn btn" href="logout.php"><img src="img/svg/logout.svg" class="img-fluid filter-white" title="Esci"></a>');
+                        if($_SESSION['user'] == 'Leonardo')
+                            echo('<a class="navbarbtn btn" href="pannelloControllo.php"><img src="img/svg/lock.svg" class="img-fluid filter-white" title="Admin"></a>');  
+                    }
                     else
                         echo('<a class="navbarbtn btn" href="login.php"><img src="img/svg/login.svg" class="img-fluid filter-white" title="Accedi"></a>');
                 ?>
