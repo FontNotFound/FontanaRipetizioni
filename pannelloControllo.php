@@ -46,19 +46,49 @@
                 </div>
                 <div class="col-6 text-center justify-content-center">
                     <h2 class="text-danger my-2" style="font-weight: bolder"> <span id="selectedElement"></span> </h2>
+                    <table class="table-hover w-100">
+                        <thead id="selectedHead" class="sticky-top bg-danger text-white">    
+                        </thead>
+                        <tbody id="selectedBody">
+                        </tbody>
+                    </table>
                     <div class="row w-100 mx-auto px-auto justify-content-end text-end">
                         <button style="display: none" class="btn btn-sm btn-danger my-2" id="uploadDocumentButton" onClick="openUploadDocumentModal()"> Carica File </button>
                     </div>
-                    <table class="table-hover w-100">
-                        <thead id="selectedHead" class="sticky-top bg-danger text-white">
-
-                        </thead>
-                        <tbody id="selectedBody">
-                          
-                        </tbody>
-                    </table>
                 </div>
             </div>
+            <div class="row w-100 mx-auto px-auto justify-content-center mt-2">
+                <h1 class="text-danger my-2" style="font-weight: bolder"> Messaggi </h1>
+                <table class="col-11 table-hover table-bordered w-100 mx-2 px-auto text-center">
+                    <thead class="bg bg-danger text-white">
+                        <tr>
+                            <th scope="col"> Nome </th> 
+                            <th scope="col"> Email </th>
+                            <th scope="col"> Messaggio </th>
+                            <th scope="col"> </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg bg-white">
+                       <?php 
+                            if($result = $conn->query("SELECT * FROM notifiche WHERE visto = false")){
+                                foreach($result as $notifica){
+                                    echo("
+                                        <tr>
+                                            <td> ".$notifica['nome']." </td>
+                                            <td> ".$notifica['email']." </td>
+                                            <td> ".$notifica['messaggio']."</td>
+                                            <td> <button class='btn btn-sm btn-danger' onClick=\"signAsRead('".$notifica['nome']."','".$notifica['email']."')\"> Segna come letto </button> </td>
+                                        </tr>
+                                    ");
+                                }
+                                if($result->num_rows == 0)
+                                    echo("<tr><td class='table-warning text-dark' style='font-weight: bold' scope='col' colspan=5> Nessun Nuovo Messaggio </td> </tr>");
+                            }
+                       ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
             <div class="row w-100 mx-auto px-auto justify-content-center mt-2">
                 <h1 class="text-danger my-2" style="font-weight: bolder"> Prenotazioni </h1>
                 <table class="col-11 table-hover table-bordered w-100 mx-2 px-auto text-center">
@@ -172,11 +202,29 @@
         selectedUser = "";
         selectedEail = "";
 
+        //Sign Notify as Read
+        function signAsRead(nome, email){
+            $.ajax({
+                url: 'admin/notify.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    'nome': nome,
+                    'email': email
+                },
+                success: function(data){
+                    location.reload()
+                }
+            });
+        }
+
         //Find Documents
         function findDocuments(user, email){
             $('#selectedHead').empty()
             $('#selectedBody').empty()
 
+            $('#selectedElement').text("Documenti")
+            $('#uploadDocumentButton').show();
             $.ajax({
                 url: 'admin/adminController.php',
                 type: 'POST',
@@ -189,8 +237,6 @@
                 success: function(data){
                     selectedUser = data[0].utente_nome
                     selectedEmail = data[0].utente_email
-                    $('#selectedElement').text("Documenti")
-                    $('#uploadDocumentButton').show();
 
                     tableHead = 
                     " <th> Nome </th> " +
