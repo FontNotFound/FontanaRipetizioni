@@ -4,6 +4,8 @@
     if (!isset($_SESSION['user'])){
         $logged = false;
         echo '<script>var logged = false; </script>';
+    } else {
+        echo '<script>var logged = true; </script>';
     }
 ?>
 
