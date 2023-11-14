@@ -1,9 +1,27 @@
 <div id="navbarRow" class="row text-start justify-content-start w-100 bg my-0 py-0 mx-0 px-0 sticky-top">
-    <div class="col-4">
-        <h1 class="text-white">Portale Ripetizioni</h1>
+    <div class="col-4 d-lg-block d-none">
+        <h1 class="text-white mt-1">Portale Ripetizioni</h1>
     </div>
-    <div class="col-8 d-flex align-items-center">
-        <div class="row w-100 mx-0 px-0">
+    <div class="col-4 d-lg-none d-block">
+        <h6 class="text-white mt-1">Portale Ripetizioni</h6>
+    </div>
+    <div class="col-8 align-items-center d-block">
+        <!-- Mobile Menu -->
+        <div class="dropdown d-lg-none d-flerx">
+            <button class="btn navbarbtn dropdown-toggle w-100 mt-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Esplora
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class=" dropdown-item" href="index.php">Home</a>
+                <a class=" dropdown-item" href="preview.php">Info Lezioni</a>
+                <a class=" dropdown-item" href="booking.php">Prenotazioni</a>
+                <a class=" dropdown-item" href="gallery.php">Raccolta Video</a>
+                <a class=" dropdown-item" href="documents.php">Esercitazioni</a>
+                <a class=" dropdown-item" href="contatti.php">Contatti</a>
+            </div>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="row w-100 mx-0 px-0 d-lg-flex d-none">
             <div class="auto">
                 <a class="navbarbtn btn" href="index.php">Home</a>
             </div>
