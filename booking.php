@@ -13,36 +13,45 @@
 
         <!-- Only section: Booking Form -->
         <div class="card w-100 bg bg-white py-0 justify-content-center text-center">
-            <div class="card-content col-11 mb-1 text-white mb-2 mx-auto">
+            <div class="card-content col-lg-11 col-12 mb-1 text-white mb-2 mx-auto d-lg-none d-block">
+                <div class="row text-start justify-content-cetner w-100 mx-auto">
+                    <p class="alert text-primary w-100" style="font-size: 2rem; font-weight: bolder"> Richiedi subito una lezione </p>
+                </div>
+                <p class="alert alert text-dark w-100" style="font-size: 2rem; font-weight: bolder"> Ooops... </p>
+                <img src="img/svg/ops.svg" class="img-responsive w-100" style="width: 100%; max-width: 150px">
+                <p class="alert alert text-dark w-100" style="font-size: 2rem; font-weight: bolder"> La prenotazione dal sito e' disponibile solo da Computer </p>
+                <a class="w-100 btn btn-success" href="contatti.php"> Vai al modulo di contatto! </a>
+            </div>
+            <div class="card-content col-lg-11 col-12 mb-1 text-white mb-2 mx-auto d-lg-block d-none">
                 <div class="row text-start justify-content-cetner w-100 mx-auto">
                     <p class="alert text-primary w-100" style="font-size: 2rem; font-weight: bolder"> Richiedi subito una lezione </p>
                 </div>
                 <!-- Materia -->
-                <div id="materiaContainer" class="sectionContainer row w-100 justify-content-center text-center">
+                <div id="materiaContainer" class="sectionContainer row w-100 justify-content-center text-center mx-0">
                     <h2 class="text-primary"> Seleziona la Materia </h2>
                     <div id="subjectSelect" class="row w-100 justify-content-center text-center">
-                        <div materia="Informatica" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-2 rounded">
+                        <div materia="Informatica" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-md-2 col-10 rounded">
                             <img src="img/svg/informatica.svg" class="img-fluid filter-white"/>
                             <h5 class="text-white"> Informatica </h5>
                         </div>
-                        <div materia="Sistemi e Reti" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-2 rounded">
+                        <div materia="Sistemi e Reti" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-md-2 col-10 rounded">
                             <img src="img/svg/sistemi.svg" class="img-fluid filter-white"/>
                             <h5 class="text-white"> Sistemi e Reti </h5>
                         </div>
-                        <div materia="TPSIT" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-2 rounded">
+                        <div materia="TPSIT" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-md-2 col-10 rounded">
                             <img src="img/svg/tpsit.svg" class="img-fluid filter-white"/>
                             <h5 class="text-white"> T.P.S.I.T. </h5>
                         </div>
-                        <div materia="Altro" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-2 rounded">
+                        <div materia="Altro" class="selectioncard card card-content alert alert-primary text-white my-2 mx-auto col-md-2 col-10 rounded">
                             <img src="img/svg/informatica.svg" class="img-fluid filter-white"/>
                             <h5 class="text-white"> Altro </h5>
                         </div>
                     </div>
                 </div> 
                 <!-- Argomento -->
-                <div previous="materia" id="argomentoContainer" class="sectionContainer row w-100 justify-content-center text-center" style="display: none">
+                <div previous="materia" id="argomentoContainer" class="mx-0 sectionContainer row w-100 justify-content-center text-center" style="display: none">
                     <h2 class="text-primary"> Seleziona l'Argomento (in generale) </h2>
-                    <select onChange="selectArg()" class="form-control form-select-lg w-100" id="argomentoSelect">
+                    <select onChange="selectArg()" class="form-control form-select-lg w-100" id="argomentoSelect" style="z-index: 20">
                         <?php 
                             if($result = $conn->query("SELECT * FROM Argomento ORDER BY Anno"))
                                 foreach($result as $arg){
@@ -56,7 +65,7 @@
                     </select>
                 </div>
                 <!-- Descrizione -->
-                <div previous="argomento" id="descrizioneContainer" class="sectionContainer row w-100 justify-content-center text-center" style="display: none">
+                <div previous="argomento" id="descrizioneContainer" class="mx-0 sectionContainer row w-100 justify-content-center text-center" style="display: none">
                     <div class="col-12">
                         <h2 class="text-primary"> Descrizione della lezione </h2>
                     </div>
@@ -69,7 +78,7 @@
                     </div>
                 </div>
                 <!-- Calendario -->
-                <div previous="descrizione" id="calendarioContainer" class="sectionContainer row w-100 justify-content-center text-center" style="display: none">
+                <div previous="descrizione" id="calendarioContainer" class="mx-0 sectionContainer row w-100 justify-content-center text-center" style="display: none">
                     <div class="col-12">
                         <h2 class="text-primary"> Seleziona l'orario e il giorno della lezione </h2>
                     </div>
@@ -91,7 +100,7 @@
                         </div> 
                         <div class="row w-100 justify-content-center mx-auto mb-2">
                             <table class="col-11 table-hover table-bordered w-100 mx-2 px-auto text-center">
-                                <thead class="bg bg-light">
+                                <thead class="bg bg-primary">
                                     <tr>
                                         <th scope="col"> Orario </th> 
                                         <th scope="col"> Lunedì </th>

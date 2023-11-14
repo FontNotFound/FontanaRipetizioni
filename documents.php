@@ -20,13 +20,13 @@
         </div>
 
         <div class="row w-100 justify-content-center text-center mx-0 px-0 my-1">
-            <div class="col-10 justify-content-center table-responsive">
+            <div class="col-lg-10 col-12 justify-content-center table-responsive">
                 <table class="table-hover w-100">
-                    <thead class="sticky-top table-info">
+                    <thead class="table-info">
                         <th> Nome </th>
-                        <th> Materia </th>
+                        <th class="d-none d-md-block"> Materia </th>
                         <th> Argomento </th>
-                        <th> Data </th>
+                        <th class="d-none d-md-block"> Data </th>
                         <th> Azione </th>
                     </thead>
                     <tbody>
@@ -36,9 +36,9 @@
                                     echo("
                                         <tr>
                                             <td> ".$document['nome']." </td>
-                                            <td> ".$document['materia']." </td>
+                                            <td class='d-none d-md-block'> ".$document['materia']." </td>
                                             <td> ".$document['argomento']." </td>
-                                            <td> ".$document['data']." </td>
+                                            <td class='d-none d-md-block'> ".$document['data']." </td>
                                             <td> <a download class='btn btn-info btn-sm' href='".$document['path']."'> Scarica </a> </td>
                                         </tr>
                                     ");

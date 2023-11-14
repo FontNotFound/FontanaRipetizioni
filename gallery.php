@@ -22,13 +22,13 @@
         </div>
 
         <div class="row w-100 justify-content-center text-center mx-0 px-0 my-1">
-            <div class="col-10 justify-content-center table-responsive">
+            <div class="col-lg-10 col-12 justify-content-center table-responsive">
                 <table class="table-hover w-100">
-                    <thead class="sticky-top table-info">
+                    <thead class="table-info">
                         <th> Nome </th>
-                        <th> Materia </th>
+                        <th class="d-none d-md-block"> Materia </th>
                         <th> Argomento </th>
-                        <th> Lezioni </th>
+                        <th class="d-none d-md-block"> Lezioni </th>
                         <th> Azione </th>
                     </thead>
                     <tbody>
@@ -38,9 +38,9 @@
                                     echo("
                                         <tr>
                                             <td> ".$playlist['nome']." </td>
-                                            <td> ".$playlist['materia']." </td>
+                                            <td class='d-none d-md-block'> ".$playlist['materia']." </td>
                                             <td> ".$playlist['argomento']." </td>
-                                            <td> ".$playlist['numLezioni']." </td>
+                                            <td class='d-none d-md-block'> ".$playlist['numLezioni']." </td>
                                             <td> <button class='btn btn-info btn-sm' onClick=\"selectPlaylist('".$playlist['nome']."')\"> Riproduci </button> </td>
                                         </tr>
                                     ");
@@ -54,12 +54,11 @@
 
         <!-- Video Section -->
         <div class="row w-100 justify-content-center text-center mx-0 px-0 mt-2" id="videoSection" style="display: none">
-            <div class="card card-content col-10 mx-auto my-3 px-auto">
-                <div class="row w-100 justify-content-between text-start">
-                    <div class="col-3 justify-content-center table-responsive my-2">
+            <div class="card card-content col-lg-10 col-12 mx-auto my-3 px-auto">
+                <div class="row w-100 mx-0 justify-content-between text-start">
+                    <div class="col-lg-3 col-12 justify-content-center table-responsive my-2">
 
                         <p class="alert alert-info text-info w-100 px-0 mx-0" style="font-weigth: bolder"> <span id="playlistName"></span> </p>
-                        <button class="btn btn-danger" onClick="uploadVideo()">Carica Video</button>
                         <table class="table-hover w-100">
                             <thead class="sticky-top">
                                 <th> Numero </th>
@@ -70,7 +69,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-9 justify-content-center table-responsive my-2" id="videoPlayer" style="display: none">
+                    <div class="col-lg-9 col-12 justify-content-center table-responsive my-2" id="videoPlayer" style="display: none">
                         <p class="alert alert-info text-info w-100 px-0 mx-0" style="font-weigth: bolder"> <span id="videoName"></span> </p>
                          <div class="embed-responsive embed-responsive-21by9">
                          <iframe id="iframe" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
