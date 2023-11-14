@@ -33,8 +33,6 @@
                                                 <td> ".$user['email']." </td>
                                                 <td> 
                                                     <button class='btn btn-sm btn-danger' onClick=\"findDocuments('".$user['nome']."', '".$user['email']."')\"> Documenti </button> 
-                                                    <button class='btn btn-sm btn-danger' onClick=\"findVideos('".$user['nome']."', '".$user['email']."')\"> Video </button>
-                                                    <button class='btn btn-sm btn-danger' onClick=\"findOrders('".$user['nome']."', '".$user['email']."')\"> Prenotazioni </button> 
                                                 </td>
                                             </tr>
                                         ");
@@ -57,9 +55,46 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row w-100 mx-auto px-auto justify-content-center mt-2">
+                <h1 class="text-danger my-2" style="font-weight: bolder"> Video </h1>
+                <table class="col-12 table-hover table-bordered w-100 mx-2 px-auto text-center">
+                    <thead class="bg bg-danger text-white">
+                        <tr>
+                            <th scope="col"> Playlist </th> 
+                            <th scope="col"> Argomento </th>
+                            <th scope="col"> Materia </th>
+                            <th scope="col"> Numero Lezioni </th>
+                            <th scope="col"> </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg bg-white">
+                       <?php
+                            if($result = $conn->query("SELECT * FROM playlists AS p RIGHT JOIN video as v ON p.nome = v.playlist ORDER BY playlist")){
+                                foreach($result as $video){
+                                    echo("
+                                        <tr>
+                                            <td> ".$video['playlist']." </td>
+                                            <td> ".$video['argomento']." </td>
+                                            <td> ".$video['materia']."</td>
+                                            <td> ".$video['numLezioni']."</td>
+                                        </tr>
+                                    ");
+                                }
+                                if($result->num_rows == 0)
+                                    echo("<tr><td class='table-warning text-dark' style='font-weight: bold' scope='col' colspan=5> Nessun Nuovo Messaggio </td> </tr>");
+                            }
+                       ?>
+                    </tbody>
+                </table>
+                <row class="w-100 mx-auto px-auto justify-content-end text-end">
+                    <button class="btn btn-danger" onClick="openUploadVideoModal()">Carica Video</button>
+                </div>
+            </div>
+
             <div class="row w-100 mx-auto px-auto justify-content-center mt-2">
                 <h1 class="text-danger my-2" style="font-weight: bolder"> Messaggi </h1>
-                <table class="col-11 table-hover table-bordered w-100 mx-2 px-auto text-center">
+                <table class="col-12 table-hover table-bordered w-100 mx-2 px-auto text-center">
                     <thead class="bg bg-danger text-white">
                         <tr>
                             <th scope="col"> Nome </th> 
@@ -88,10 +123,10 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+
             <div class="row w-100 mx-auto px-auto justify-content-center mt-2">
                 <h1 class="text-danger my-2" style="font-weight: bolder"> Prenotazioni </h1>
-                <table class="col-11 table-hover table-bordered w-100 mx-2 px-auto text-center">
+                <table class="col-12 table-hover table-bordered w-100 mx-2 px-auto text-center">
                     <thead class="bg bg-danger text-white">
                         <tr>
                             <th scope="col"> Orario </th> 
@@ -152,7 +187,7 @@
             </div>
         </div>
 
-        <!-- Modal -->
+        <!-- Modal Document -->
         <div class="modal fade" id="documentUploadModal" tabindex="-1" aria-labelledby="documentUploadModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -182,6 +217,46 @@
                         <div class="form-group">
                             <label for="argomentoDoc">Argomento</label>
                             <input type="text" class="form-control" id="argomentoDoc" name="argomentoDoc" placeholder="">
+                        </div>
+                        <input class="form-control" type="file" name="document" id="document">
+                        <div class="row w-100 mx-auto px-auto justify-content-end text-end">
+                            <input type="submit" class="btn btn-danger" value="Carica" name="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoUploadModal" tabindex="-1" aria-labelledby="videoUploadModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-body">
+                    <form action="admin/documentUpload.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="nomeVid">Nome</label>
+                            <input type="text" class="form-control" id="nomeVid" name="nomeVid" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="linkVid">Link</label>
+                            <input type="email" class="form-control" id="linkVid" name="linkVid" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="numVid">Numero</label>
+                            <input type="text" class="form-control" id="numVid" name="numVid" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="materiaVid">Materia</label>
+                            <select class="form-select col-12 form-control" aria-label="materiaVid" name="materiaVid">
+                        </div>
+                            <option selected>Altro</option>
+                            <option value="Informatica">Informatica</option>
+                            <option value="Sistemi e Reti">SIstemi e Reti</option>
+                            <option value="TPSIT">TPSIT</option>
+                        </select>
+                        <div class="form-group">
+                            <label for="argomentoVid">Argomento</label>
+                            <input type="text" class="form-control" id="argomentoVid" name="argomentoVid" placeholder="">
                         </div>
                         <input class="form-control" type="file" name="document" id="document">
                         <div class="row w-100 mx-auto px-auto justify-content-end text-end">
@@ -262,12 +337,19 @@
             });
         }
 
-        //Handle Upload Modal
+        //Handle Upload Document Modal
         function openUploadDocumentModal(){
             $('#documentUploadModal').modal('show')
             $('#userDoc').val(selectedUser)
             $('#emailDoc').val(selectedEmail)
         }
+
+        //Handle Upload Video Modal
+        function openUploadVideoModal(){
+            $('#videoUploadModal').modal('show')
+        }
+
+
 
     </script>
 </html>

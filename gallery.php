@@ -59,6 +59,7 @@
                     <div class="col-3 justify-content-center table-responsive my-2">
 
                         <p class="alert alert-info text-info w-100 px-0 mx-0" style="font-weigth: bolder"> <span id="playlistName"></span> </p>
+                        <button class="btn btn-danger" onClick="uploadVideo()">Carica Video</button>
                         <table class="table-hover w-100">
                             <thead class="sticky-top">
                                 <th> Numero </th>
@@ -72,7 +73,7 @@
                     <div class="col-9 justify-content-center table-responsive my-2" id="videoPlayer" style="display: none">
                         <p class="alert alert-info text-info w-100 px-0 mx-0" style="font-weigth: bolder"> <span id="videoName"></span> </p>
                          <div class="embed-responsive embed-responsive-21by9">
-                         <iframe id="iframe" width="640" height="360" src="http://www.youtube.com/embed/dQw4w9WgXcQ?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+                         <iframe id="iframe" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
