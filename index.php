@@ -18,25 +18,25 @@
                     <p class="alert text-dark w-100" style="font-size: 1.5rem; font-weight: bolder"> Chi Sono </p>
                 </div>
                 <div class="row text-center justify-content-center w-100 mx-0">
-                    <div class="col-2">
-                        <div class="row w-100 justify-content-center text-center">
+                    <div class="col-lg-2 col-12">
+                        <div class="row w-100 justify-content-center text-center mx-0">
                             <img class="img-fluid img-thumbnail rounded-circle" src="img/profilePic.png"/>
                         </div>
-                        <div class="row w-100 justify-content-center text-center">
+                        <div class="row w-100 justify-content-center text-center mx-0">
                             <span style="font-size: 1.3rem; font-weight:bolder"> Leonardo Fontana </span>
                         </div>
                     </div>
-                    <div class="col-10 text-white justify-content-center">
+                    <div class="col-lg-10 col-12 text-white justify-content-center">
                         <div class="row h-100">
-                            <div class="col-4 mx-auto">
+                            <div class="col-lg-4 col-12 mt-1 mx-auto">
                                 <div class="card h-100 bg bg-success text-white">
                                     <div class="card-body">
-                                        <div class="row w-100 justify-content-center text-start">
+                                        <div class="row w-100 justify-content-center text-start mx-0">
                                             <div class="col-3">
-                                                <img src="img/svg/book.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                                <img src="img/svg/book.svg" style="width: 100%; max-width: 100px " class="img-fluid filter-white"/>
                                             </div>
                                         </div>
-                                        <div class="row w-100 justify-content- center text-start">
+                                        <div class="row w-100 justify-content-center text-start mx-0">
                                             <div class="col-12 mb-2">
                                                 <span class="card-title"> Formazione </span>
                                             </div>
@@ -52,15 +52,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 mx-auto">
+                            <div class="col-lg-4 col-12 mt-1  mx-auto">
                                 <div class="card h-100 bg bg-success">
                                     <div class="card-body">
-                                        <div class="row w-100 justify-content-center text-start">
+                                        <div class="row w-100 justify-content-center text-start mx-0">
                                             <div class="col-3">
-                                                <img src="img/svg/briefcase.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                                <img src="img/svg/briefcase.svg" style="width: 100%; max-width: 100px" class="img-fluid filter-white"/>
                                             </div>
                                         </div>
-                                        <div class="row w-100 justify-content-center text-start">
+                                        <div class="row w-100 justify-content-center mx-0 text-start">
                                             <div class="col-12 mb-2">
                                                 <span class="card-title"> Lavoro </span>
                                             </div>
@@ -74,15 +74,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 mx-auto">
+                            <div class="col-lg-4 col-12 mt-1  mx-auto">
                                 <div class="card h-100 bg bg-success">
                                     <div class="card-body">
-                                        <div class="row w-100 justify-content-center text-start">
+                                        <div class="row w-100 justify-content-center text-start mx-0">
                                             <div class="col-3">
-                                                <img src="img/svg/github.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                                <img src="img/svg/github.svg" style="width: 100%; max-width: 100px" class="img-fluid filter-white"/>
                                             </div>
                                         </div>
-                                        <div class="row w-100 justify-content-center text-start">
+                                        <div class="row w-100 justify-content-center text-start mx-0">
                                             <div class="col-12 mb-2">
                                                 <span class="card-title"> Progetti </span>
                                             </div>
@@ -109,17 +109,17 @@
                     <p class="alert text-info w-100" style="font-size: 1.5rem; font-weight: bolder"> Strumenti Didattici </p>
                 </div>
                 <div class="row w-100 justify-content-center mx-auto">
-                    <div class="col-4 d-flex align-items-center">
+                    <div class="col-4 d-lg-flex d-none align-items-center">
                         <img class="img-fluid" src="img/svg/lavagna.svg">
                     </div> 
-                    <div class="col-8">
+                    <div class="col-lg-8 col-12">
                         <div class="row w-100 mx-0 px-0 mt-2">
-                            <div class="col-6 mx-auto">
+                            <div class="col-lg-6 col-12 mt-1 mx-auto">
                                 <div class="card bg bg-info">
                                     <div class="card-body">
                                         <div class="row w-100 justify-content-center text-start">
                                             <div class="col-3">
-                                                <img src="img/svg/voice.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                                <img src="img/svg/voice.svg" style="width: 100%; max-width: 100px" class="img-fluid filter-white"/>
                                             </div>
                                         </div>
                                         <div class="row w-100 justify-content-center text-start">
@@ -137,12 +137,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 mx-auto">
+                            <div class="col-lg-6 col-12 mt-1 mx-auto">
                                 <div class="card bg bg-info">
                                     <div class="card-body">
                                         <div class="row w-100 justify-content-center text-start">
                                             <div class="col-3">
-                                                <img src="img/svg/video.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                                <img src="img/svg/video.svg" style="width: 100%; max-width: 100px" class="img-fluid filter-white"/>
                                             </div>
                                         </div>
                                         <div class="row w-100 justify-content-center text-start">
@@ -160,12 +160,12 @@
                             </div>
                         </div>
                         <div class="row w-100 mx-0 px-0 my-2">
-                            <div class="col-6 mx-auto">
+                            <div class="col-lg-6 col-12 mt-1 mx-auto">
                                 <div class="card bg bg-info">
                                     <div class="card-body">
                                         <div class="row w-100 justify-content-center text-start">
                                             <div class="col-3">
-                                                <img src="img/svg/folders.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                                <img src="img/svg/folders.svg" style="width: 100%; max-width: 100px" class="img-fluid filter-white"/>
                                             </div>
                                         </div>
                                         <div class="row w-100 justify-content-center text-start">
@@ -181,12 +181,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 mx-auto">
+                            <div class="col-lg-6 col-12 mt-1 mx-auto">
                                 <div class="card bg bg-info">
                                     <div class="card-body">
                                         <div class="row w-100 justify-content-center text-start">
                                             <div class="col-3">
-                                                <img src="img/svg/chat.svg" style="width: 100%" class="img-fluid filter-white"/>
+                                                <img src="img/svg/chat.svg" style="width: 100%; max-width: 100px" class="img-fluid filter-white"/>
                                             </div>
                                         </div>
                                         <div class="row w-100 justify-content-center text-start">
@@ -219,9 +219,9 @@
                 </div>
                 <div class="row w-100 justify-content-center mx-auto">
                     <div class="row w-100 mx-auto px-auto justify-content-between">
-                        <div class="col-9">
+                        <div class="col-lg-9 col-12">
                             <div class="row w-100 mx-auto px-auto">
-                                <div class="col-4 mx-auto">
+                                <div class="col-lg-4 col-12 mt-1 mx-auto">
                                     <div class="card bg bg-primary" style="height: 100%">
                                         <div class="card-body" style="height: 100%">
                                             <div class="row w-100 justify-content-center text-start">
@@ -242,7 +242,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 mx-auto">
+                                <div class="col-lg-4 col-12 mt-1 mx-auto">
                                     <div class="card bg bg-primary" style="height: 100%">
                                         <div class="card-body" style="heigth: 100%">
                                             <div class="row w-100 justify-content-center text-start">
@@ -264,7 +264,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4 mx-auto">
+                                <div class="col-lg-4 col-12 mt-1 mx-auto">
                                     <div class="card bg bg-primary" style="height: 100%">
                                         <div class="card-body" style="heigth: 100%">
                                             <div class="row w-100 justify-content-center text-start">
@@ -288,7 +288,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-3 d-flex align-items-center">
+                        <div class="col-3 d-lg-flex d-none mt-1 align-items-center">
                             <img src="img/svg/payment.svg" class="img-fluid">
                         </div>
                     </div>
@@ -298,10 +298,10 @@
 
         <!-- Fourth section: Booking -->
         <div class="card card-content alert alert-success justify-content-center text-start">
-            <div class="row text-start justify-content-cetner w-100 mx-auto">
+            <div class="d-lg-block d-none row text-start justify-content-cetner w-100 mx-auto">
                 <p class="alert text-success w-100" style="font-size: 1.5rem; font-weight: bolder"> Disponibilità e Prenotazioni </p>
             </div>
-            <div class="row w-100 justify-content-center mx-auto mb-2">
+            <div class="d-lg-block d-none row w-100 justify-content-center mx-auto mb-2">
                 <table class="col-11 table-hover table-bordered w-100 mx-2 px-auto text-center">
                     <thead class="bg bg-success text-white">
                         <tr>
@@ -351,7 +351,7 @@
                 </table>
             </div>
             <div class="row w-100 justify-content-end text-center">
-                <div class="col-4">
+                <div class="col-lg-4 col-12">
                     <a href="booking.php" class="btn btn-success"> Prenota subito una lezione </a>
                 </div>
             </div>
